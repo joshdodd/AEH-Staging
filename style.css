@@ -1,0 +1,17 @@
+/*
+Theme Name: Essential Hospitals
+Description: CMS theme for America's Essential Hospitals. Crafted, with love, by MESH
+Version: 1.0
+Author: MESH Design and Development
+Author URI: http://www.meshfresh.com
+*/
+
+
+@import url(css/reset.css);
+@import url(css/aeh.css);
+@import url(css/membernetwork.css);
+@import url(css/responsive.css);
+@media only print{
+
+}
+

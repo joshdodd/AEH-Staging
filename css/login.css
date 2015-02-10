@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,600,700);
+
+body.login{background:#fff;font-family:'Cabin',Arial,sans-serif;position:relative;}
+	.login #nav a, .login #backtoblog a,body.login a{color:#f05135 !important;text-decoration: none;}
+	body.login a:hover{opacity:0.7;}
+
+#login{bottom: 0;height: 440px;left: 0;padding: 0;position: absolute;right: 0;top: 0;}
+.login h1 a{background:url(../images/logo.png) no-repeat;height:151px;width:279px;margin:0 auto;}
+.login form{border:none;box-shadow:0 0 0 #fff;border-radius:0;border-top:8px solid #f05135;border-bottom:1px solid #ccc;}
+.login form .input, .login input[type="text"]{background:#FFFFFF;color: #5A5A5A;font-size: 16px;font-weight: 700;padding: 6px 10px;}
+.login label{color:#5a5a5a;}
+.wp-core-ui .button-primary{background:#f05135;color:#fff;font-weight:600;text-transform:uppercase;border:none;}
+p#nav{float:left;}
+p#backtoblog{float:right;}
+.wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus{background:#F05135;opacity:0.7;}

@@ -1,0 +1,221 @@
+
+
+/* Table of Content
+==================================================
+	#imports
+	#colors
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+	#Misc */
+
+
+/* COMPASS IMPORTS 
+================================================= */
+@import "compass/css3";
+
+/* COLORS 
+================================================= */
+
+$action: #F05135;
+$quality: #35bdb2; 
+$edu: #717073;
+$inst: #00AEEF;
+$blog: #B9B9B9;
+$body: #5a5a5a;
+
+.color-action{color: #F05135;}
+.color-quality{color: #28bdb3}
+.color-edu{color: #717073;}
+.color-inst{color: #00AEEF;}
+.color-blog{color:  #B9B9B9;}
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+	a{text-decoration:none;}
+
+
+/* #Basic Styles
+================================================== */
+body {
+		background: #fff;
+		font: 13px/18px "Cabin", Helvetica, Arial, sans-serif;
+		color: $body;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+ .fullwidth{width:100%; }
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+
+	h1 { 
+		font-size: 28px; line-height: 34px; margin-bottom: 10px; font-weight:bold;
+		a{color: $body; text-decoration: none;}
+		a:hover{color: $body; text-decoration: none;}
+	}
+	h2{ 
+		font-size: 18px; line-height: 26px; margin-bottom: 10px; font-weight:bold; color: $body;
+		a{color: $body; text-decoration: none;}
+		a:hover{color: $body; text-decoration: none;}
+	}
+	 
+	h3 { font-size: 15px; line-height: 18px; font-weight:bold; }
+	h4 { font-size: 13px; line-height: 18px; font-weight:bold;}
+	 
+
+	p { margin: 0 0 18px 0; }
+	p img { margin: 0; }
+ 
+
+	em { font-style: italic; }
+	strong { font-weight: bold;  }
+ 
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px;  font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px;  }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: $body; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: $body; }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 0px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 0px 0 0px 0px; font-size: 100%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 0px; }
+	li { line-height: 18px; margin-bottom: 0px; }
+ 
+
+
+
+
+/* #Forms
+================================================== */
+
+	form {
+		margin-bottom: 20px; }
+	fieldset {
+		margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+ 
+ 
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 	 }
+	textarea {
+		min-height: 60px; }
+	label,
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+/* =============================================================================
+   WordPress Image CSS Styles
+   ========================================================================== */
+   
+.alignnone {margin:5px 20px 20px 0;}
+.aligncenter,div.aligncenter {display:block;margin:5px auto 5px auto;}
+.alignright {float:right;margin:5px 0 20px 20px;}
+.alignleft {float:left;margin:5px 20px 20px 0;}
+.aligncenter {display:block;margin:5px auto 5px auto;}
+a img.alignright {float:right;margin:5px 0 20px 20px;}
+a img.alignnone {margin:5px 20px 20px 0;}
+a img.alignleft {float:left;margin:5px 20px 20px 0;}
+a img.aligncenter {display:block;margin-left:auto;margin-right:auto;}
+.wp-caption {background:#FFF;border:1px solid #F0F0F0;max-width:96%;padding:5px 3px 10px;text-align:center;}
+.wp-caption.alignnone {margin:5px 20px 20px 0;}
+.wp-caption.alignleft {margin:5px 20px 20px 0;}
+.wp-caption.alignright {margin:5px 0 20px 20px;}
+.wp-caption img {border:0 none;height:auto;margin:0;max-width:98.5%;padding:0;width:auto;}
+.wp-caption p.wp-caption-text,.gallery-caption {font-size:11px;line-height:17px;margin:0;padding:0 4px 5px;}
+ 
+

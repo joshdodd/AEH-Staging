@@ -1,0 +1,33 @@
+/* Common */
+body{padding:20px;}
+
+/* Header */
+#memberdash{display:none;}
+#utility-nav{display:none !important;}
+
+#header{}
+	#header .navigation{display:none;}
+
+/* Banner */
+#featured-img{display:none;}
+
+/* Content */
+#printbtn{display:none;}
+.panel{border:none !important;}
+#columnBalance{display:block !important;margin:32px 0 0 0;}
+	#columnBalance .gutter{padding:20px !important; border:none !important;}
+	#columnBalance > *{height:auto !important;}
+
+#contentPrimary{width:100% !important;clear:both;display:block !important;}
+	#contentPrimary #respond{display:none;}
+	#contentPrimary #postmeta{margin:25px 0 !important;}
+
+#contentSecondary{display:none !important;}
+
+#contentTertiary{display:block;width:100% !important;clear:both;display:block !important;border:none !important;border-top:1px solid #ccc;}
+	#contentTertiary #sharetitle{display:none;}
+	#contentTertiary #share{display:none;}
+
+/* Footer */
+#orginfo{display:none;}
+#footer{display:none;}

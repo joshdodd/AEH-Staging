@@ -1,0 +1,3 @@
+UPDATE wp_users t1, wp_usermeta t2
+SET t1.user_url = t2.meta_value
+WHERE t1.ID = t2.user_id AND t2.meta_key = "website"
